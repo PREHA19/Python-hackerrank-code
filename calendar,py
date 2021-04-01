@@ -1,0 +1,7 @@
+import calendar
+month,day,year=map(int,input().split())
+print((list(calendar.day_name)[calendar.weekday(year, month, day)]).upper())
+
+
+#calendar.weekday(...) -> returns the number of the day of the week list(calendar.day_name) -> returns a list of all the weekdays like ["Sunday",...] so we can index using calendar.weekday which gives back the number of the day eg: 0 for sunday
+#also we need to convert the string returned to upper() to match the answer.#
